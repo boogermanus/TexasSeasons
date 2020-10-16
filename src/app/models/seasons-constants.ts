@@ -4,8 +4,8 @@ export class SeasonsConstants {
     private static year = new Date().getFullYear();
 
     private static getActualSpring(): ISeason {
-        const start = new Date(this.year, 2, 1);
-        const end = new Date(this.year, 2, this.year % 4 === 0 ? 29 : 28);
+        const start = new Date(this.year, 1, 1);
+        const end = new Date(this.year, 1, this.year % 4 === 0 ? 29 : 28);
 
         return {
             start,
@@ -16,8 +16,8 @@ export class SeasonsConstants {
     }
 
     private static getPreSummer(): ISeason {
-        const start = new Date(this.year, 3, 1);
-        const end = new Date(this.year, 4, 30);
+        const start = new Date(this.year, 2, 1);
+        const end = new Date(this.year, 3, 30);
 
         return {
             start,
@@ -28,8 +28,8 @@ export class SeasonsConstants {
     }
 
     private static getActualSummer(): ISeason {
-        const start = new Date(this.year, 5, 1);
-        const end = new Date(this.year, 6, 30);
+        const start = new Date(this.year, 4, 1);
+        const end = new Date(this.year, 5, 30);
 
         return {
             start,
@@ -40,8 +40,8 @@ export class SeasonsConstants {
     }
 
     private static getMelt(): ISeason {
-        const start = new Date(this.year, 7, 1);
-        const end = new Date(this.year, 8, 31);
+        const start = new Date(this.year, 6, 1);
+        const end = new Date(this.year, 7, 31);
 
         return {
             start,
@@ -52,8 +52,8 @@ export class SeasonsConstants {
     }
 
     private static getPostMelt(): ISeason {
-        const start = new Date(this.year, 9, 1);
-        const end = new Date(this.year, 9, 30);
+        const start = new Date(this.year, 8, 1);
+        const end = new Date(this.year, 8, 30);
 
         return {
             start,
@@ -64,8 +64,8 @@ export class SeasonsConstants {
     }
 
     private static getSpookySummer(): ISeason {
-        const start = new Date(this.year, 10, 1);
-        const end = new Date(this.year, 10, 31);
+        const start = new Date(this.year, 9, 1);
+        const end = new Date(this.year, 9, 31);
 
         return {
             start,
@@ -76,8 +76,8 @@ export class SeasonsConstants {
     }
 
     private static getFakeFall(): ISeason {
-        const start = new Date(this.year, 11, 1);
-        const end = new Date(this.year, 11, 20);
+        const start = new Date(this.year, 10, 1);
+        const end = new Date(this.year, 10, 20);
 
         return {
             start,
@@ -88,8 +88,8 @@ export class SeasonsConstants {
     }
 
     private static getActualFall(): ISeason {
-        const start = new Date(this.year, 11, 21);
-        const end = new Date(this.year, 11, 30);
+        const start = new Date(this.year, 10, 21);
+        const end = new Date(this.year, 10, 30);
 
         return {
             start,
@@ -100,8 +100,8 @@ export class SeasonsConstants {
     }
 
     private static getTShirtWinter(): ISeason {
-        const start = new Date(this.year, 12, 1);
-        const end = new Date(this.year, 12, 31);
+        const start = new Date(this.year, 11, 1);
+        const end = new Date(this.year, 11, 31);
 
         return {
             start,
@@ -112,8 +112,8 @@ export class SeasonsConstants {
     }
 
     private static getActualWinter(): ISeason {
-        const start = new Date(this.year, 1, 1);
-        const end = new Date(this.year, 1, 10);
+        const start = new Date(this.year, 0, 1);
+        const end = new Date(this.year, 0, 10);
 
         return {
             start,
@@ -123,9 +123,9 @@ export class SeasonsConstants {
         };
     }
 
-    private static getSuffle(): ISeason {
-        const start = new Date(this.year, 1, 11);
-        const end = new Date(this.year, 1, 31);
+    private static getShuffle(): ISeason {
+        const start = new Date(this.year, 0, 11);
+        const end = new Date(this.year, 0, 31);
 
         return {
             start,
@@ -147,7 +147,7 @@ export class SeasonsConstants {
             this.getActualFall(),
             this.getTShirtWinter(),
             this.getActualWinter(),
-            this.getSuffle()
+            this.getShuffle()
         ];
 
     }
