@@ -5,10 +5,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { SeasonsComponent } from './seasons/seasons.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SeasonsComponent
   ],
   imports: [
     BrowserModule,
