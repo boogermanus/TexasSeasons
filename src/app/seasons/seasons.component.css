@@ -14,3 +14,8 @@
 button {
     background-color:#BF0D3E;
 }
+
+.seasons-card {
+    width: 375px; 
+    margin-top: 2px
+}
