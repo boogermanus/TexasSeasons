@@ -13,4 +13,8 @@ describe('SeasonsService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should have method getSeason', () => {
+    expect(service.getSeason).toBeDefined();
+  });
 });
