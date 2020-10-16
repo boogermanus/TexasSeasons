@@ -23,7 +23,7 @@ export class SeasonsConstants {
             start,
             end,
             name: 'Pre-Summer',
-            description: 'Expect both spring and summer weather.'
+            description: 'It\'s starting to heat up.'
         };
     }
 
@@ -47,7 +47,7 @@ export class SeasonsConstants {
             start,
             end,
             name: 'Melt',
-            description: 'Best avoid visiting unless you know someone who owns a pool.'
+            description: 'It\'s miserable, we all don\'t want to be here.'
         };
     }
 
@@ -59,7 +59,7 @@ export class SeasonsConstants {
             start,
             end,
             name: 'Post-Melt',
-            description: 'Akin to Actual Summer, but last a only a month.'
+            description: 'Akin to Actual Summer, but last a only a month. It\'s not hot, but it\'s not great.'
         };
     }
 
@@ -131,7 +131,7 @@ export class SeasonsConstants {
             start,
             end,
             name: 'Shuffle',
-            description: 'It\'s the Texas shuffle!'
+            description: 'It\'s the Texas shuffle! We don\'t know what\'s going on!'
         };
     }
 

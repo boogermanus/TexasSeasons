@@ -1,14 +1,24 @@
 import { Injectable } from '@angular/core';
 import { ISeason } from '../interfaces/iseason';
+import { SeasonsConstants } from '../models/seasons-constants';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SeasonsService {
 
+  private seasons: ISeason[] = SeasonsConstants.getSeasons();
   constructor() { }
 
-  public getSeason(): void {
+  public getSeason(date: Date): ISeason {
+    for (const season of this.seasons) {
+      if (this.isSeason(season, date)) {
+        return season;
+      }
+    }
+  }
 
+  private isSeason(season: ISeason, date: Date) {
+    return date >= season.start && date <= season.end;
   }
 }
