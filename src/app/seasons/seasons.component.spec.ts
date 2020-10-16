@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatCardModule } from '@angular/material/card';
 
 import { SeasonsComponent } from './seasons.component';
 
@@ -8,7 +9,8 @@ describe('SeasonsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SeasonsComponent ]
+      declarations: [ SeasonsComponent, SeasonsComponent ],
+      imports: [MatCardModule]
     })
     .compileComponents();
   }));
