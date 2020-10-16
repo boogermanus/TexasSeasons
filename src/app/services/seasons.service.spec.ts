@@ -19,6 +19,10 @@ describe('SeasonsService', () => {
     expect(service.getSeason).toBeDefined();
   });
 
+  it('should have method getCurrentSeason', () => {
+    expect(service.getCurrentSeason).toBeDefined();
+  });
+
   describe('getSeason()', () => {
     const year = new Date().getFullYear();
 
@@ -91,6 +95,14 @@ describe('SeasonsService', () => {
       const value = service.getSeason(new Date(year, 0, 11));
 
       expect(value.name).toEqual('Shuffle');
+    });
+  });
+
+  describe('getCurrentSeason()', () => {
+    it('should return the same value as getSeason(new Date())', () => {
+      const expected = service.getSeason(new Date());
+      const value = service.getCurrentSeason();
+      expect(expected.name).toEqual(value.name);
     });
   });
 });

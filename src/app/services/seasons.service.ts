@@ -18,6 +18,10 @@ export class SeasonsService {
     }
   }
 
+  public getCurrentSeason(): ISeason {
+    return this.getSeason(new Date());
+  }
+
   private isSeason(season: ISeason, date: Date) {
     return date >= season.start && date <= season.end;
   }
