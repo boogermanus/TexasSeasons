@@ -1,4 +1,16 @@
 .header-image {
-    background-image: url('../../assets/texasflag.svg.png');
+    background-image: url('~/assets/texasflag.svg.png');
     background-size: cover;
+}
+
+.texas-blue {
+    color: #00205b;
+}
+
+.texas-red {
+    color: #BF0D3E;
+}
+
+button {
+    background-color:#BF0D3E;
 }

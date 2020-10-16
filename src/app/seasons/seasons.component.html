@@ -1,12 +1,28 @@
-<mat-card>
+<mat-card style="width: 375px; margin-top: 2px">
     <mat-card-header>
         <div mat-card-avatar class="header-image"></div>
-        <mat-card-title style="color: #00205b">Texas Seasons</mat-card-title>
+        <mat-card-title class="texas-blue">Texas Seasons</mat-card-title>
         <mat-card-subtitle>Because it's different down here y'all</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
+        <h2 class="texas-red" align="center">Current Season</h2>
         <div class="row justify-content-center">
-            <p>test</p>
+            <mat-card class="mat-elevation-z0">
+                <mat-card-header>
+                    <mat-card-title class="texas-blue">{{currentSeason.name}}</mat-card-title>
+                    <mat-card-subtitle>{{currentSeason.start | date: 'shortDate'}} -
+                        {{currentSeason.end | date: 'shortDate'}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="texas-red">{{currentSeason.description}}</p>
+                </mat-card-content>
+            </mat-card>
         </div>
     </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button>View All</button>
+    </mat-card-actions>
+    <mat-card-footer style="padding-left: 20px">
+        <p>Thanks to @definitely_not_travis on TickTok for the new season names.</p>
+    </mat-card-footer>
 </mat-card>
