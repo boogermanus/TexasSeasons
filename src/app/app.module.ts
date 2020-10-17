@@ -8,11 +8,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SeasonsComponent } from './seasons/seasons.component';
+import { AllSeasonsComponent } from './all-seasons/all-seasons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SeasonsComponent
+    SeasonsComponent,
+    AllSeasonsComponent
   ],
   imports: [
     BrowserModule,

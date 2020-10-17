@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AllSeasonsComponent } from '../all-seasons/all-seasons.component';
 import { ISeason } from '../interfaces/iseason';
 import { SeasonsService } from '../services/seasons.service';
 
@@ -10,10 +12,17 @@ import { SeasonsService } from '../services/seasons.service';
 export class SeasonsComponent implements OnInit {
 
   public currentSeason: ISeason;
-  constructor(private seasonsService: SeasonsService) { }
+  constructor(private seasonsService: SeasonsService,
+              private dialogService: MatDialog) { }
 
   ngOnInit(): void {
     this.currentSeason = this.seasonsService.getCurrentSeason();
+  }
+
+  viewAll(): void {
+    const dialog = this.dialogService.open(AllSeasonsComponent, {
+      width: '400px'
+    });
   }
 
 }
