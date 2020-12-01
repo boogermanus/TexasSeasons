@@ -89,7 +89,7 @@ export class SeasonsConstants {
 
     private static getActualFall(): ISeason {
         const start = new Date(this.year, 10, 21);
-        const end = new Date(this.year, 10, 30);
+        const end = new Date(this.year, 10, 31);
 
         return {
             start,
@@ -107,7 +107,7 @@ export class SeasonsConstants {
             start,
             end,
             name: 'T-Shirt Winter',
-            description: 'The month you wash both Winter and Summer cloathing in the same load.'
+            description: 'The month you wash both Winter and Summer clothing in the same load.'
         };
     }
 
