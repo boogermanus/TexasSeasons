@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 import { AllSeasonsComponent } from './all-seasons.component';
 
@@ -8,7 +9,9 @@ describe('AllSeasonsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AllSeasonsComponent ]
+      declarations: [ AllSeasonsComponent ],
+      imports: [MatDialogModule],
+      providers: [{provide: MatDialogRef, useValue: {}}]
     })
     .compileComponents();
   }));
