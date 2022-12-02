@@ -13,10 +13,12 @@ export class SeasonsComponent implements OnInit {
 
   public currentSeason: ISeason;
   constructor(private seasonsService: SeasonsService,
-              private dialogService: MatDialog) { }
+              private dialogService: MatDialog) {
+    this.currentSeason = this.seasonsService.getCurrentSeason();
+  }
 
   ngOnInit(): void {
-    this.currentSeason = this.seasonsService.getCurrentSeason();
+
   }
 
   viewAll(): void {

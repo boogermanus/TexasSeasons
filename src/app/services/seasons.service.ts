@@ -16,6 +16,8 @@ export class SeasonsService {
         return season;
       }
     }
+
+    return  {start: new Date(), end: new Date(), name: "bad", description: "bad"};
   }
 
   public getCurrentSeason(): ISeason {
