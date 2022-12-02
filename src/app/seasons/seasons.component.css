@@ -1,5 +1,5 @@
 .header-image {
-    background-image: url('~/assets/texasflag.svg.png');
+    background-image: url('../../assets/texasflag.svg.png');
     background-size: cover;
 }
 
@@ -16,6 +16,6 @@ button {
 }
 
 .seasons-card {
-    width: 375px; 
+    width: 375px;
     margin-top: 2px
 }
