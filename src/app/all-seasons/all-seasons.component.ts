@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef} from '@angular/material/dialog';
 import { ISeason } from '../interfaces/iseason';
 import { SeasonsConstants } from '../models/seasons-constants';
 
