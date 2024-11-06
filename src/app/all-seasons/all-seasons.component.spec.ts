@@ -1,13 +1,12 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatLegacyDialogModule as MatDialogModule, MatLegacyDialogRef as MatDialogRef } from '@angular/material/legacy-dialog';
-
+import { async, ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { AllSeasonsComponent } from './all-seasons.component';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 describe('AllSeasonsComponent', () => {
   let component: AllSeasonsComponent;
   let fixture: ComponentFixture<AllSeasonsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ AllSeasonsComponent ],
       imports: [MatDialogModule],
