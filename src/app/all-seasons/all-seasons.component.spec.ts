@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AllSeasonsComponent } from './all-seasons.component';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
@@ -6,14 +6,14 @@ describe('AllSeasonsComponent', () => {
   let component: AllSeasonsComponent;
   let fixture: ComponentFixture<AllSeasonsComponent>;
 
-  beforeEach(waitForAsync(() => {
+  beforeEach(async() => {
     TestBed.configureTestingModule({
       declarations: [ AllSeasonsComponent ],
       imports: [MatDialogModule],
       providers: [{provide: MatDialogRef, useValue: {}}]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AllSeasonsComponent);
