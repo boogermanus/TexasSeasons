@@ -4,9 +4,10 @@ import { ISeason } from '../interfaces/iseason';
 import { SeasonsConstants } from '../models/seasons-constants';
 
 @Component({
-  selector: 'app-all-seasons',
-  templateUrl: './all-seasons.component.html',
-  styleUrls: ['./all-seasons.component.css']
+    selector: 'app-all-seasons',
+    templateUrl: './all-seasons.component.html',
+    styleUrls: ['./all-seasons.component.css'],
+    standalone: false
 })
 export class AllSeasonsComponent implements OnInit {
 

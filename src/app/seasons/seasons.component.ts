@@ -5,9 +5,10 @@ import { ISeason } from '../interfaces/iseason';
 import { SeasonsService } from '../services/seasons.service';
 
 @Component({
-  selector: 'app-seasons',
-  templateUrl: './seasons.component.html',
-  styleUrls: ['./seasons.component.css']
+    selector: 'app-seasons',
+    templateUrl: './seasons.component.html',
+    styleUrls: ['./seasons.component.css'],
+    standalone: false
 })
 export class SeasonsComponent implements OnInit {
 
